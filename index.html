@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern CSS Layouts - Flexbox & Grid</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header with navigation -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="site-title">Modern Layouts</h1>
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-button" aria-label="Toggle menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Mastering CSS Layouts</h2>
+                <p>Learn Flexbox and Grid to create modern, responsive web designs</p>
+                <a href="#main-content" class="btn">Explore Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main content area -->
+    <main id="main-content" class="main-content">
+        <div class="container">
+            <div class="content-grid">
+                <!-- Primary content area -->
+                <article class="primary-content">
+                    <h2>Flexbox vs. Grid: When to Use Each</h2>
+                    
+                    <section class="layout-section">
+                        <h3>Flexbox Layout</h3>
+                        <div class="flex-container">
+                            <div class="flex-item">Item 1</div>
+                            <div class="flex-item">Item 2</div>
+                            <div class="flex-item">Item 3</div>
+                            <div class="flex-item">Item 4</div>
+                            <div class="flex-item">Item 5</div>
+                            <div class="flex-item">Item 6</div>
+                        </div>
+                        <p>Flexbox is ideal for one-dimensional layouts where you need to align items in a single row or column.</p>
+                    </section>
+                    
+                    <section class="layout-section">
+                        <h3>CSS Grid Layout</h3>
+                        <div class="grid-container">
+                            <div class="grid-item header">Header</div>
+                            <div class="grid-item sidebar">Sidebar</div>
+                            <div class="grid-item main">Main Content</div>
+                            <div class="grid-item footer">Footer</div>
+                        </div>
+                        <p>CSS Grid excels at two-dimensional layouts with both rows and columns that need precise control.</p>
+                    </section>
+                    
+                    <section class="card-section">
+                        <h3>Responsive Card Layout</h3>
+                        <div class="card-container">
+                            <div class="card">
+                                <img src="image/plp1.jpg" alt="Placeholder image">
+                                <h4>Flexbox Card</h4>
+                                <p>Learn how to create flexible components with Flexbox.</p>
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+                            <div class="card">
+                                <img src="image/plp 2.jpg" alt="Placeholder image">
+                                <h4>Grid Card</h4>
+                                <p>Discover the power of CSS Grid for complex layouts.</p>
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+                            <div class="card">
+                                <img src="image/plp2.jpg" alt="Placeholder image">
+                                <h4>Responsive Design</h4>
+                                <p>Make your layouts adapt to any screen size.</p>
+                                <a href="#" class="btn">Read More</a>
+                            </div>
+                        </div>
+                    </section>
+                </article>
+                
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h3>Resources</h3>
+                        <ul class="resource-list">
+                            <li><a href="#">CSS Tricks Guide to Flexbox</a></li>
+                            <li><a href="#">Grid by Example</a></li>
+                            <li><a href="#">MDN Layout Documentation</a></li>
+                            <li><a href="#">Responsive Design Patterns</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="sidebar-widget">
+                        <h3>Newsletter</h3>
+                        <form class="newsletter-form">
+                            <label for="email">Stay updated:</label>
+                            <input type="email" id="email" placeholder="Your email address">
+                            <button type="submit" class="btn">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>About Us</h4>
+                    <p>Teaching modern CSS techniques to help you build better websites.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Courses</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul class="social-links">
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                        <li><a href="#">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Modern CSS Layouts. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
